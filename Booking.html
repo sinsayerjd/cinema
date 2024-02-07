@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Login/free-icon-film-1016813.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Booking.css">
+    <title>JD's Cinema</title>
+</head>
+
+<body>
+    <!-- 로고 및 인포, 로그아웃 영역 -->
+    <div id="head">
+        <div id="logoCase">
+            <img src="imgs/Login/JD_s Cinema - MarkMaker Logo (7).png" alt="" id="logo">
+        </div>
+        <div id="info">
+            <span id="user_name">sample</span>
+            <input type="button" value="LOGOUT" id="logout">
+        </div>
+    </div>
+
+    <!-- 내비게이션 영역 -->
+    <div id="navCase">
+        <nav>
+            <ul>
+                <li class="list" id="homeBtn">홈</li>
+                <li class="list" id="movieBtn">영화</li>
+                <li class="list" id="ticketingBtn">예매</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 예매 메뉴 영역 -->
+    <div id="seclectOptionCase">
+        <div id="selectOption">
+    
+            <!-- 초기화 버튼 -->
+            <div id="reset">
+                <button id="resetBtn"><img src="imgs/Booking/free-icon-reset-9563597.png" alt=""
+                        style="width: 15px; margin-right: 10px;">초기화</button>
+            </div>
+    
+            <!-- 옵션1 : 영화, 극장, 날짜, 시간 선택 -->
+            <div id="option1">
+                <div id="optionMovie">
+                    <div class="optionTitle">영화</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/all.jpg" alt="" class="rating">스파이더맨 : 어크로스 더 유니버스</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/12.jpg" alt="" class="rating">너의 이름은</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/all.jpg" alt="" class="rating">청 설</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/12.jpg" alt="" class="rating">탑건 : 매버릭</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/12.jpg" alt="" class="rating">테 넷</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/12.jpg" alt="" class="rating">말할 수 없는 비밀</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/12.jpg" alt="" class="rating">아바타 : 물의 길</div>
+                    <div class="optionMovieContent"><img src="imgs/Booking/12.jpg" alt="" class="rating">더 퍼스트 슬램덩크</div>
+                </div>
+                <div id="optionTheater">
+                    <div class="optionTitle">극장</div>
+                    <div class="optionTheaterContent">JD's 제 1 관</div>
+                    <div class="optionTheaterContent">JD's 제 2 관</div>
+                </div>
+                <div id="optionDate">
+                    <div class="optionTitle">날짜</div>
+                    <div id="calendar">
+                        <div id="year"></div>
+                        <div id="month"></div>
+                        <div id="date"></div>
+                    </div>
+                </div>
+                <div id="optionTime">
+                    <div class="optionTitle">시간</div>
+                    <div class="optionTimeContent">10 : 30</div>
+                    <div class="optionTimeContent">13 : 00</div>
+                    <div class="optionTimeContent">15 : 45</div>
+                    <div class="optionTimeContent">18 : 15</div>
+                    <div class="optionTimeContent">21 : 00</div>
+                </div>
+            </div>
+    
+            <!-- 옵션2 : 인원 선택 -->
+            <div id="option2">
+                <div id="optionPeople">
+                    <div class="optionTitle">인원</div>
+                    <div id="adult" class="optionPeoPleContent">
+                        <div class="peopleKind">성인</div>
+                        <input type="button" value="-" id="adultMinus" class="peopleNumberBtn">
+                        <span id="adultNumber">0</span>
+                        <input type="button" value="+" id="adultPlus" class="peopleNumberBtn">
+                    </div>
+                    <div id="adolescent" class="optionPeoPleContent">
+                        <div class="peopleKind">청소년</div>
+                        <input type="button" value="-" id="adolescentMinus" class="peopleNumberBtn">
+                        <span id="adolescentNumber">0</span>
+                        <input type="button" value="+" id="adolescentPlus" class="peopleNumberBtn">
+                    </div>
+                    <div id="senior" class="optionPeoPleContent">
+                        <div class="peopleKind">시니어</div>
+                        <input type="button" value="-" id="seniorMinus" class="peopleNumberBtn">
+                        <span id="seniorNumber">0</span>
+                        <input type="button" value="+" id="seniorPlus" class="peopleNumberBtn">
+                    </div>
+                    <div id="disabled" class="optionPeoPleContent">
+                        <div class="peopleKind">장애인</div>
+                        <input type="button" value="-" id="disabledMinus" class="peopleNumberBtn">
+                        <span id="disabledNumber">0</span>
+                        <input type="button" value="+" id="disabledPlus" class="peopleNumberBtn">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 옵션3 : 좌석 선택 -->
+            <div id="option3">
+                <div id="optionSeat">
+                    <div class="optionTitle">좌석</div>
+                    <div id="screen">S C R E E N</div>
+                    <div id="cinema1">
+                        <div class="row">
+                            <span class="rowName">A</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">B</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">C</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">D</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">E</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">F</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                    </div>
+                    <div id="cinema2">
+                        <div class="row">
+                            <span class="rowName">A</span>
+                            <span class="noneSeat"></span>
+                            <span class="noneSeat"></span>
+                            <span class="noneSeat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="noneSeat"></span>
+                            <span class="noneSeat"></span>
+                            <span class="noneSeat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">B</span>
+                            <span class="noneSeat"></span>
+                            <span class="noneSeat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="noneSeat"></span>
+                            <span class="noneSeat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">C</span>
+                            <span class="noneSeat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="noneSeat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">D</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">E</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                        <div class="row">
+                            <span class="rowName">F</span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                            <span class="seat"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 예약 확인 영역 -->
+    <div id="resultCase">
+        <div id="result">
+            <div id="resultTitle">예매 확인</div>
+            <div id="showResult">
+                <div id="resultMovie"></div>
+                <div id="resultTheater"></div>
+                <div id="resultDate"></div>
+                <div id="resultTime"></div>
+                <input type="button" value="결제하기" id="payment">            
+            </div>
+        </div>
+    </div>
+    <!-- 고객센터 안내 영역 -->
+    <div id="supportCase">
+        <div id="support">
+            <div id="support1">
+                <div id="supportInfo">고객센터</div>
+            </div>
+            <div id="support2">
+                <div class="supportDetail">1234-5678</div>
+                <div class="supportDetail">고객센터 운영시간 (평일 : 09:00 ~ 18:00)</div>
+                <div class="supportDetail">업무시간 외 자동응답 안내 가능합니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배너 영역 -->
+    <div id="bannerCase">
+        <div id="banner"
+            style="background-color: rgb(0, 108, 255); background-image: url(&quot;https://caching2.lottecinema.co.kr/lotte_image/2017/bg_01.jpg&quot;); background-repeat: repeat-x; background-position: 0px 0px;">
+            <a href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_36&amp;adgroupid=adg_lottecinema_20230227_112&amp;adid=adi_lottecinema_20230227_136"
+                target="_blank" title="새창열기"><img
+                    src="https://caching2.lottecinema.co.kr/lotte_image/2022/Samsungfire/0525/Samsungfire_980240.png"
+                    alt="삼성화재 다이렉트 착 내 차 보험료 확인하면 스타벅스 아메리카노 1잔 바로 지급 만기일 상관없이 365일 참여 가능"></a>
+        </div>
+    </div>
+
+    <!-- footer 영역 -->
+    <footer>
+        <div id="companyCase">
+            <div class="companyInfo">서울시 송파구 석촌동</div>
+            <div class="companyInfo">대표이사 : 정선교 · 사업자등록번호 : 123-45-6789</div>
+            <div class="companyInfo">ⓒ2023 JD's. All Rigths Reserved</div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/Booking.js"></script>
+    <script src="js/BookingCalendar.js"></script>
+    <script src="js/BookingResult.js"></script>
+    <script src="js/BookingReset.js"></script>
+</body>
+
+</html>

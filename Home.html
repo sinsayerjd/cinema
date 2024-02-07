@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Login/free-icon-film-1016813.png">
+    <title>JD's Cinema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Home.css">
+</head>
+
+<body>
+    <!-- 로고 및 인포, 로그아웃 영역 -->
+    <div id="head">
+        <div id="logoCase">
+            <img src="imgs/Login/JD_s Cinema - MarkMaker Logo (7).png" alt="" id="logo">
+        </div>
+        <div id="info">
+            <span id="user_name">sample</span>
+            <input type="button" value="LOGOUT" id="logout">
+        </div>
+    </div>
+
+    <!-- 내비게이션 영역 -->
+    <div id="navCase">
+        <nav>
+            <ul>
+                <li class="list" id="homeBtn">홈</li>
+                <li class="list" id="movieBtn">영화</li>
+                <li class="list" id="ticketingBtn">예매</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 광고 영상 영역 -->
+    <div id="ad">
+        <iframe id="spider" width="560" height="315"
+            src="https://www.youtube.com/embed/-gFmnOgxUfg?autoplay=1&amp;start=0&amp;rel=0&amp;background=1&amp;loop=1 si=dnZMpRFW0xMSHHrW"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- 영화 차트 영역 -->
+    <div id="chartCase">
+        <div id="chartText">영화 차트</div>
+
+        <!-- 차트 목록 -->
+        <div id="chart">
+            <div class="chartList">
+                <img src="imgs/Poster/스파이디.webp" alt="" class="moviePoster">
+                <div class="movieTitle">어메이징 스파이더맨 - 어크로스 더 유니버스</div>
+                <div class="rate">예매율 48%</div>
+                <button class="movieInfo">상세보기</button>
+            </div>
+            <div class="chartList" id="aaa">
+                <img src="imgs/Poster/yourname.webp" alt="" class="moviePoster">
+                <div class="movieTitle">너의 이름은</div>
+                <div class="rate">예매율 48%</div>
+                <button class="movieInfo">상세보기</button>
+            </div>
+            <div class="chartList">
+                <img src="imgs/Poster/secret.webp" alt="" class="moviePoster">
+                <div class="movieTitle">말할 수 없는 비밀</div>
+                <div class="rate">예매율 48%</div>
+                <button class="movieInfo">상세보기</button>
+            </div>
+            <div class="chartList">
+                <img src="imgs/Poster/hearme.webp" alt="" class="moviePoster">
+                <div class="movieTitle">청 설</div>
+                <div class="rate">예매율 48%</div>
+                <button class="movieInfo">상세보기</button>
+            </div>
+            <div class="chartList">
+                <img src="imgs/Poster/ruruounikenshin.webp" alt="" class="moviePoster">
+                <div class="movieTitle">바람의 검심 최종장: 더 비기닝</div>
+                <div class="rate">예매율 48%</div>
+                <button class="movieInfo">상세보기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 고객센터 안내 영역 -->
+    <div id="supportCase">
+        <div id="support">
+            <div id="support1">
+                <div id="supportInfo">고객센터</div>
+            </div>
+            <div id="support2">
+                <div class="supportDetail">1234-5678</div>
+                <div class="supportDetail">고객센터 운영시간 (평일 : 09:00 ~ 18:00)</div>
+                <div class="supportDetail">업무시간 외 자동응답 안내 가능합니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배너 영역 -->
+    <div id="bannerCase">
+        <div id="banner" style="background-color: rgb(0, 108, 255); background-image: url(&quot;https://caching2.lottecinema.co.kr/lotte_image/2017/bg_01.jpg&quot;); background-repeat: repeat-x; background-position: 0px 0px;"><a href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_36&amp;adgroupid=adg_lottecinema_20230227_112&amp;adid=adi_lottecinema_20230227_136" target="_blank" title="새창열기"><img src="https://caching2.lottecinema.co.kr/lotte_image/2022/Samsungfire/0525/Samsungfire_980240.png" alt="삼성화재 다이렉트 착 내 차 보험료 확인하면 스타벅스 아메리카노 1잔 바로 지급 만기일 상관없이 365일 참여 가능"></a></div>
+    </div>
+    
+    <!-- footer 영역 -->
+    <footer>
+        <div id="companyCase">
+            <div class="companyInfo">서울시 송파구 석촌동</div>
+            <div class="companyInfo">대표이사 : 정선교 · 사업자등록번호 : 123-45-6789</div>
+            <div class="companyInfo">ⓒ2023 JD's. All Rigths Reserved</div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/Home.js"></script>
+</body>
+
+</html>

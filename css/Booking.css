@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 로고 및 인포, 로그아웃 영역 */
+#head {
+    position: relative;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#head #logoCase {
+    position: absolute;
+    left: 45%;
+}
+
+#head #logoCase #logo {
+    height: 130px;
+}
+
+#head #info {
+    position: absolute;
+    right: 20%;
+}
+
+#info #user_name, #info #logout {
+    height: 40px;
+    font-size: 20px;
+}
+
+#info #user_name {
+    margin: 10px;
+}
+
+#info #logout {
+    padding: 10px;
+    background-color: white;
+    border: 0.5px solid #734136;
+    border-radius: 4px;
+    color: #734136;
+    cursor: pointer;
+}
+
+#head #logoCase #logo:hover {
+    cursor: pointer;
+}
+
+/* 내비게이션 영역 */
+#navCase {
+    height: 60px;
+    border-bottom: 3px solid red;
+}
+
+#navCase ul {
+    position: relative;
+}
+
+#navCase ul {
+    position: absolute;
+    left: 15%;
+    list-style: none;
+}
+
+#navCase ul li {
+    float: left;
+    padding: 0 30px;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+}
+
+#navCase ul li:last-child {
+    border-right: none;
+}
+
+#navCase ul li:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* 예매 메뉴 영역 */
+#seclectOptionCase {
+    position: relative;
+    height: 1450px;
+    margin-top: 50px;
+    font-family: "Nanum Gothic";
+}
+
+#seclectOptionCase #selectOption {
+    position: absolute;
+    left: 18%;
+    right: 20%;
+    height: 1450px;
+}
+
+#seclectOptionCase #selectOption #reset {
+    display: block;
+    height: 40px;
+}
+
+#seclectOptionCase #selectOption #reset button {
+    float: right;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #959595;
+    background-color: #F2F0E5;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+    padding: 3px 5px;
+}
+
+#seclectOptionCase #selectOption #reset button:hover {
+    cursor: pointer;
+}
+
+/* 옵션 영역 */
+#option1 {
+    background-color: #F2F0E5;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#option1 > div {
+    float: left;
+    height: 100%;
+    border-right: 2px solid #ddd;
+}
+
+#option1 > div:last-child {
+    border-right: none;
+}
+
+#option1 > div .optionTitle {
+    background-color: rgb(51, 51, 51);
+    color: rgb(212, 212, 212);
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+
+/* 영화 옵션 영역 */
+#option1 #optionMovie {
+    width: 45%;
+}
+
+#option1 #optionMovie .optionMovieContent {
+    padding: 10px 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 44px;
+    line-height: 24px;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+}
+
+#option1 #optionMovie .optionMovieContent:hover {
+    background-color: rgb(230, 228, 217);
+    cursor: pointer;
+}
+
+#option1 #optionMovie .optionMovieContent .rating {
+    margin-right: 5px;
+    height: 100%;
+}
+
+/* 상영관 옵션 영역 */
+#option1 #optionTheater {
+    width: 20%;
+}
+
+#option1 #optionTheater .optionTheaterContent {
+    padding: 10px 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#option1 #optionTheater .optionTheaterContent:hover {
+    background-color: rgb(230, 228, 217);
+    cursor: pointer;
+}
+
+/* 날짜 옵션 영역 */
+#option1 #optionDate {
+    width: 15%;
+}
+
+#option1 #optionDate #calendar {
+    text-align: center;
+}
+
+#option1 #optionDate #calendar #year {
+    padding: 10px 8px 0px;
+    font-size: 0.8em;
+    font-family: "Black Han Sans";
+    color: #666666;
+}
+
+#option1 #optionDate #calendar #month {
+    font-family: "Black Han Sans";
+    font-size: 2em;
+    color: #666666;
+}
+#option1 #optionDate #calendar #date {
+    text-align: center;
+}
+
+#option1 #optionDate #calendar #date .showDate {
+    /* padding-left: 20px; */
+    font-weight: bold;
+    padding: 10px 8px;
+}
+
+#option1 #optionDate #calendar #date .showDate:hover {
+    background-color: rgb(230, 228, 217);
+    cursor: pointer;
+}
+
+/* 시간 옵션 영역 */
+#option1 #optionTime {
+    width: 20%;
+}
+
+#option1 #optionTime .optionTimeContent {
+    padding: 10px 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#option1 #optionTime .optionTimeContent:hover {
+    background-color: rgb(230, 228, 217);
+    cursor: pointer;
+}
+
+/* 옵션2 : 인원 선택 영역 */
+#option2 {
+    height: 150px;
+    margin-top: 100px;
+    background-color: #F2F0E5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#option2 #optionPeople .optionTitle {
+    background-color: rgb(51, 51, 51);
+    color: rgb(212, 212, 212);
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+
+#option2 #optionPeople .optionPeoPleContent {
+    float: left;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#option2 #optionPeople .optionPeoPleContent .peopleKind {
+    margin-bottom: 15px;
+}
+
+#option2 #optionPeople .optionPeoPleContent .peopleNumberBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+#option2 #optionPeople .optionPeoPleContent span {
+    margin: 0 10px;
+}
+
+/* 옵션3 : 좌석 선택 영역 */
+#option3 {
+    margin-top: 100px;
+}
+
+#option3 #optionSeat {
+    background-color: #F2F0E5;
+    padding-bottom: 80px;
+}
+
+#option3 #optionSeat .optionTitle {
+    background-color: rgb(51, 51, 51);
+    color: rgb(212, 212, 212);
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+
+#option3 #optionSeat #screen {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(110, 110, 110);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+#option3 #optionSeat #cinema1 {
+    display: none;
+}
+
+#option3 #optionSeat #cinema1 .row {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+#option3 #optionSeat #cinema1 .row .rowName {
+    font-size: 1.2em;
+    justify-content: center;
+    line-height: 40px;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+#option3 #optionSeat #cinema1 .row .seat {
+    width: 35px;
+    height: 35px;
+    background-color: #c7c3c3a8;
+    border-radius: 15px 15px 2px 0px;
+    margin: 5px 5px;
+}
+
+#option3 #optionSeat #cinema1 .row .selectSeat {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 15px 15px 2px 0px;
+    margin: 5px 5px;
+}
+
+#option3 #optionSeat #cinema1 .row .seat:nth-child(3) {
+    margin-right: 50px;
+}
+
+#option3 #optionSeat #cinema1 .row .seat:nth-child(8) {
+    margin-right: 50px;
+}
+
+#option3 #optionSeat #cinema2 {
+    display: none;
+}
+
+#option3 #optionSeat #cinema2 .row {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+#option3 #optionSeat #cinema2 .row .rowName {
+    font-size: 1.2em;
+    justify-content: center;
+    line-height: 40px;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+#option3 #optionSeat #cinema2 .row .seat {
+    width: 35px;
+    height: 35px;
+    background-color: #c7c3c3a8;
+    border-radius: 15px 15px 2px 0px;
+    margin: 5px 5px;
+}
+
+#option3 #optionSeat #cinema2 .row .noneSeat {
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px;
+}
+
+#option3 #optionSeat #cinema2 .row .seat:nth-child(6) {
+    margin-right: 50px;
+}
+
+/* 예약 확인 영역 */
+#resultCase {
+    position: relative;
+    height: 300px;
+}
+
+#resultCase #result {
+    position: absolute;
+    left: 18%;
+    right: 20%;
+    height: 133px;
+    background-color: #F2F0E5;
+}
+
+#resultCase #result #resultTitle {
+    background-color: rgb(51, 51, 51);
+    color: rgb(212, 212, 212);
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+
+#resultCase #result #showResult {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+#resultCase #result #showResult div {
+    padding: 0 20px;
+}
+
+#resultCase #result #showResult #payment {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(191, 40, 40);
+    border: 5px solid rgb(220, 52, 52);
+    border-radius: 4px;
+    width: 106px;
+    height: 100px;
+    color: white;
+    font-family: "Black Han Sans";
+    font-size: 1.5em;
+}
+#resultCase #result #showResult #payment:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* 고객센터 안내 영역 */
+#supportCase {
+    position: relative;
+    height: 200px;
+}
+
+#support {
+    position: absolute;
+    left: 15%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#support #support1 {
+    float: left;
+    height: 70px;
+    margin-right: 15px;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+#support #support2 {
+    display: inline-block;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+/* 배너 영역 */
+#bannerCase {
+    height: 250px;
+}
+
+/* footer 영역 */
+footer {
+    position: relative;
+}
+
+#companyCase {
+    position: absolute;
+    left: 15%;
+    font-family: "Nanum Gothic";
+    font-size: 0.8em;
+    padding: 20px;
+}
+#companyCase .companyInfo {
+    padding: 5px 0;
+}

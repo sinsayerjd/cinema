@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Login/free-icon-film-1016813.png">
+    <title>JD's Cinema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/MovieDetail4.css">
+</head>
+
+<body>
+    <!-- 로고 및 인포, 로그아웃 영역 -->
+    <div id="head">
+        <div id="logoCase">
+            <img src="imgs/Login/JD_s Cinema - MarkMaker Logo (7).png" alt="" id="logo">
+        </div>
+        <div id="info">
+            <span id="user_name">sample</span>
+            <input type="button" value="LOGOUT" id="logout">
+        </div>
+    </div>
+
+    <!-- 내비게이션 영역 -->
+    <div id="navCase">
+        <nav>
+            <ul>
+                <li class="list" id="homeBtn">홈</li>
+                <li class="list" id="movieBtn">영화</li>
+                <li class="list" id="ticketingBtn">예매</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 영화 소개 영역 -->
+    <div id="movieCase">
+        <div id="movie">
+            <div id="moviePoster">
+                <img src="imgs/Poster/hearme.webp" alt="" id="moviePoster">
+            </div>
+            <div id="movieSimpleInfo">
+                <!-- 영화 정보 -->
+                <div class="movieInfo">
+                    <div class="movieTitle">청 설</div>
+                    <div class="movieEngTitle">Hear Me</div>
+                    <div class="rate">예매율</div>
+                </div>
+                <!-- 감독, 배우, 기타 정보 -->
+                <div class="etcInfo">
+                    <div id="directorInfo">
+                        <div class="director">감독</div>
+                        <div class="directorName">청펀펀</div>
+                    </div>
+                    <div id="actorInfo">
+                        <div class="actor">배우</div>
+                        <div class="actorName">펑위옌, 진의함, 천옌시 외</div>
+                    </div>
+                </div>
+                <!-- 장르 정보 -->
+                <div class="genreInfo">
+                    <div class="genre">장르</div>
+                    <div class="genreName">로맨스, 드라마</div>
+                </div>
+                <!-- 예매하기 버튼 -->
+                <div id="bookBtnCase">
+                    <button class="bookBtn">예매하기</button>
+                </div>
+            </div>
+            <!-- 줄거리 -->
+            <div id="synopsisCase">
+                <div class="synopsis1">마음이 듣고 가슴으로 느낀 두남녀의 떨리는 연애 스토리</div>
+                <div class="synopsis2">
+                    <p>부모님을 도와 식당에서 도시락 배달을 하는 티엔커는 청각장애인 수영 경기장으로 배달을 갔다가 수화로 소통하고 있는 양양을 보고 사랑에 빠지게 된다.</p>
+                    <p>티엔커는 양양에게 자신의 마음을 표현하려고 애쓰지만, 언니의 꿈을 응원하며 뒷바라지를 하느라 삶의 여유가 없는 양양은 티엔커를 자꾸만 밀어낸다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 감독 및 배우 소개 영역 -->
+    <div id="directorActorCase">
+        <div id="directorCase">
+            <div id="director">감독</div>
+            <div class="directorInfo">
+                <img src="imgs/MovieDetail/hearMe/청펀펀.jpg" alt="" class="directorImg">
+                <div class="directorName">청펀펀</div>
+            </div>
+        </div>
+        <div id="actorCase">
+            <div id="actor">배우</div>
+            <div class="actorInfo">
+                <img src="imgs/MovieDetail/hearMe/펑위옌.jpg" alt="" class="actorImg">
+                <div class="mainActor">주연</div>
+                <div class="actorName">펑위옌</div>
+            </div>
+            <div class="actorInfo">
+                <img src="imgs/MovieDetail/hearMe/진의함.jpg" alt="" class="actorImg">
+                <div class="mainActor">주연</div>
+                <div class="actorName">진의함</div>
+            </div>
+            <div class="actorInfo">
+                <img src="imgs/MovieDetail/hearMe/천옌시.webp" alt="" class="actorImg">
+                <div class="mainActor">주연</div>
+                <div class="actorName">천옌시</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 고객센터 안내 영역 -->
+    <div id="supportCase">
+        <div id="support">
+            <div id="support1">
+                <div id="supportInfo">고객센터</div>
+            </div>
+            <div id="support2">
+                <div class="supportDetail">1234-5678</div>
+                <div class="supportDetail">고객센터 운영시간 (평일 : 09:00 ~ 18:00)</div>
+                <div class="supportDetail">업무시간 외 자동응답 안내 가능합니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배너 영역 -->
+    <div id="bannerCase">
+        <div id="banner"
+            style="background-color: rgb(0, 108, 255); background-image: url(&quot;https://caching2.lottecinema.co.kr/lotte_image/2017/bg_01.jpg&quot;); background-repeat: repeat-x; background-position: 0px 0px;">
+            <a href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_36&amp;adgroupid=adg_lottecinema_20230227_112&amp;adid=adi_lottecinema_20230227_136"
+                target="_blank" title="새창열기"><img
+                    src="https://caching2.lottecinema.co.kr/lotte_image/2022/Samsungfire/0525/Samsungfire_980240.png"
+                    alt="삼성화재 다이렉트 착 내 차 보험료 확인하면 스타벅스 아메리카노 1잔 바로 지급 만기일 상관없이 365일 참여 가능"></a>
+        </div>
+    </div>
+
+    <!-- footer 영역 -->
+    <footer>
+        <div id="companyCase">
+            <div class="companyInfo">서울시 송파구 석촌동</div>
+            <div class="companyInfo">대표이사 : 정선교 · 사업자등록번호 : 123-45-6789</div>
+            <div class="companyInfo">ⓒ2023 JD's. All Rigths Reserved</div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/MovieDetail4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 바디 영역 */
+body {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/* 인포 영역 */
+#info {
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#info #user_name, #info #logout {
+    height: 40px;
+    font-size: 20px;
+}
+
+#info #user_name {
+    margin: 10px;
+}
+
+#info #logout {
+    padding: 10px;
+    background-color: white;
+    border: 0.5px solid #734136;
+    border-radius: 4px;
+    color: #734136;
+    cursor: pointer;
+}
+
+/* 구분선 영역 */
+/* #line {
+    height: 20px;
+    border: 1px solid #ddd;
+} */
+
+/* 프로젝트 케이스 영역 */
+#projectCase {
+    overflow: visible;
+    height: 1000px;
+    margin-top: 20px;
+}
+
+#projectCase #project1, #projectCase #project2 {
+    width: 700px;
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+}
+
+
+
+#projectCase #project1 img, #projectCase #project2 img {
+    align-items: center;
+    border-radius: 4px;
+    width: 660px;
+    height: 660px;
+}
+
+#projectCase #project1 {
+    float: left;
+}
+
+#projectCase #project1:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#projectCase #project2 {
+    float: right;
+}
+
+#projectCase #project2:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.projectName {
+    color: #734136;
+    padding: 20px;
+    font-family: "Black Han Sans";
+}
+
+.enterProject {
+    border: none;
+    background-color: #734136;
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.enterProject:hover {
+    background-color: #96584a;
+}
+
+.line {
+    height: 15px;
+    border-radius: 4px;
+    background-color: #734136;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Login/free-icon-film-1016813.png">
+    <title>JD's Cinema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/MovieDetail1.css">
+</head>
+
+<body>
+    <!-- 로고 및 인포, 로그아웃 영역 -->
+    <div id="head">
+        <div id="logoCase">
+            <img src="imgs/Login/JD_s Cinema - MarkMaker Logo (7).png" alt="" id="logo">
+        </div>
+        <div id="info">
+            <span id="user_name">sample</span>
+            <input type="button" value="LOGOUT" id="logout">
+        </div>
+    </div>
+
+    <!-- 내비게이션 영역 -->
+    <div id="navCase">
+        <nav>
+            <ul>
+                <li class="list" id="homeBtn">홈</li>
+                <li class="list" id="movieBtn">영화</li>
+                <li class="list" id="ticketingBtn">예매</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 영화 소개 영역 -->
+    <div id="movieCase">
+        <div id="movie">
+            <div id="moviePoster">
+                <img src="imgs/Poster/스파이디.webp" alt="" id="moviePoster">
+            </div>
+            <div id="movieSimpleInfo">
+                <!-- 영화 정보 -->
+                <div class="movieInfo">
+                    <div class="movieTitle">스파이더맨 : 어크로스 더 유니버스</div>
+                    <div class="movieEngTitle">Spider-Man: Across the Spider-Verse</div>
+                    <div class="rate">예매율</div>
+                </div>
+                <!-- 감독, 배우, 기타 정보 -->
+                <div class="etcInfo">
+                    <div id="directorInfo">
+                        <div class="director">감독</div>
+                        <div class="directorName">호아킴 도스산토스, 켐프 파워스, 저스틴 K. 톰슨</div>
+                    </div>
+                    <div id="actorInfo">
+                        <div class="actor">배우</div>
+                        <div class="actorName">셔메이크 무어,헤일리 스타인펠드, 오스카 아이작 외</div>
+                    </div>
+                </div>
+                <!-- 장르 정보 -->
+                <div class="genreInfo">
+                    <div class="genre">장르</div>
+                    <div class="genreName">애니메이션, 슈퍼히어로, 액션, 어드벤처, 코미디</div>
+                </div>
+                <!-- 예매하기 버튼 -->
+                <div id="bookBtnCase">
+                    <button class="bookBtn">예매하기</button>
+                </div>
+            </div>
+            <!-- 줄거리 -->
+            <div id="synopsisCase">
+                <div class="synopsis1">스파이더맨 VS 스파이더맨?!</div>
+                <div class="synopsis2">
+                    <p>여러 성장통을 겪으며 새로운 스파이더맨이 된 '마일스 모랄레스'.</p>
+                    <p>그 앞에 다른 평행세계의 스파이더우먼 '그웬'이 다시 나타난다.</p>
+                    <p>모든 차원의 멀티버스 속 스파이더맨들을 만나게 되지만,</p>
+                    <p>질서에 대한 신념이 부딪히며 예상치 못한 균열이 생기는데…</p>
+                    <p>상상 그 이상을 넘어서는 멀티버스의 세계가 열린다!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 감독 및 배우 소개 영역 -->
+    <div id="directorActorCase">
+        <div id="directorCase">
+            <div id="director">감독</div>
+            <div class="directorInfo">
+                <img src="imgs/MovieDetail/spidermanAcross/호아킴 도스 산토스.jpg" alt="" class="directorImg">
+                <div class="directorName">호아킴 도스 산토스</div>
+            </div>
+        </div>
+        <div id="actorCase">
+            <div id="actor">배우</div>
+            <div class="actorInfo">
+                <img src="imgs/MovieDetail/spidermanAcross/셔메이크 무어.webp" alt="" class="actorImg">
+                <div class="mainActor">주연</div>
+                <div class="actorName">셔메이크 무어</div>
+            </div>
+            <div class="actorInfo">
+                <img src="imgs/MovieDetail/spidermanAcross/헤일리 스타인펠드.jpg" alt="" class="actorImg">
+                <div class="mainActor">주연</div>
+                <div class="actorName">헤일리 스타인펠드</div>
+            </div>
+            <div class="actorInfo">
+                <img src="imgs/MovieDetail/spidermanAcross/오스카 아이작.webp" alt="" class="actorImg">
+                <div class="mainActor">주연</div>
+                <div class="actorName">오스카 아이작</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 고객센터 안내 영역 -->
+    <div id="supportCase">
+        <div id="support">
+            <div id="support1">
+                <div id="supportInfo">고객센터</div>
+            </div>
+            <div id="support2">
+                <div class="supportDetail">1234-5678</div>
+                <div class="supportDetail">고객센터 운영시간 (평일 : 09:00 ~ 18:00)</div>
+                <div class="supportDetail">업무시간 외 자동응답 안내 가능합니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배너 영역 -->
+    <div id="bannerCase">
+        <div id="banner"
+            style="background-color: rgb(0, 108, 255); background-image: url(&quot;https://caching2.lottecinema.co.kr/lotte_image/2017/bg_01.jpg&quot;); background-repeat: repeat-x; background-position: 0px 0px;">
+            <a href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_36&amp;adgroupid=adg_lottecinema_20230227_112&amp;adid=adi_lottecinema_20230227_136"
+                target="_blank" title="새창열기"><img
+                    src="https://caching2.lottecinema.co.kr/lotte_image/2022/Samsungfire/0525/Samsungfire_980240.png"
+                    alt="삼성화재 다이렉트 착 내 차 보험료 확인하면 스타벅스 아메리카노 1잔 바로 지급 만기일 상관없이 365일 참여 가능"></a>
+        </div>
+    </div>
+
+    <!-- footer 영역 -->
+    <footer>
+        <div id="companyCase">
+            <div class="companyInfo">서울시 송파구 석촌동</div>
+            <div class="companyInfo">대표이사 : 정선교 · 사업자등록번호 : 123-45-6789</div>
+            <div class="companyInfo">ⓒ2023 JD's. All Rigths Reserved</div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/MovieDetail1.js"></script>
+</body>
+
+</html>

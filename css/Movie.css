@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 로고 및 인포, 로그아웃 영역 */
+#head {
+    position: relative;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#head #logoCase {
+    position: absolute;
+    left: 45%;
+}
+
+#head #logoCase #logo {
+    height: 130px;
+}
+
+#head #info {
+    position: absolute;
+    right: 20%;
+}
+
+#info #user_name, #info #logout {
+    height: 40px;
+    font-size: 20px;
+}
+
+#info #user_name {
+    margin: 10px;
+}
+
+#info #logout {
+    padding: 10px;
+    background-color: white;
+    border: 0.5px solid #734136;
+    border-radius: 4px;
+    color: #734136;
+    cursor: pointer;
+}
+
+#head #logoCase #logo:hover {
+    cursor: pointer;
+}
+
+/* 내비게이션 영역 */
+#navCase {
+    height: 60px;
+    border-bottom: 3px solid red;
+}
+
+#navCase ul {
+    position: relative;
+}
+
+#navCase ul {
+    position: absolute;
+    left: 15%;
+    list-style: none;
+}
+
+#navCase ul li {
+    float: left;
+    padding: 0 30px;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+}
+
+#navCase ul li:last-child {
+    border-right: none;
+}
+
+#navCase ul li:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* 영화 차트 영역 */
+/* #chartCase {
+
+} */
+
+#chartCase #info {
+    position: relative;
+    height: 84px;
+    width: 65%;
+    left: 18%;
+    border-bottom: 8px solid black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#chartCase #info #infoText {
+    position: absolute;
+    font-family: "Black Han Sans";
+    font-size: 35px;
+    left: 5%;
+    padding: 20px 0;
+}
+
+#chart {
+    position: relative;
+    left: 18%;
+    overflow: hidden;
+    height: 1000px;
+    width: 65%;
+    border-bottom: 8px solid black;
+    margin-bottom: 20px;
+}
+
+#chart .chartList {
+    width: 180px;
+    height: 400px;
+    margin-right: 80px;
+    float: left;
+    margin-bottom: 80px;
+}
+
+#chart .chartList .moviePoster {
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#chart .chartList .chartRank {
+    background-color: #ff8084;
+    color: white;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* #chart .chartList .moviePoster {
+
+} */
+
+#chart .chartList .movieTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+#chart .chartList .rate {
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Nanum Gothic";
+}
+
+#chart .chartList .releaseDate {
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Nanum Gothic";
+
+}
+
+#chart .chartList .bookBtn {
+    background-color: #ff8084;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 180px;
+    color: white;
+    padding: 5px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#chart .chartList .bookBtn:hover {
+    background-color: #d6676a;
+    cursor: pointer;
+}
+
+/* 고객센터 안내 영역 */
+#supportCase {
+    position: relative;
+    height: 200px;
+}
+
+#support {
+    position: absolute;
+    left: 18%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#support #support1 {
+    float: left;
+    height: 70px;
+    margin-right: 15px;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+#support #support2 {
+    display: inline-block;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+/* 배너 영역 */
+#bannerCase {
+    height: 250px;
+}
+
+/* footer 영역 */
+footer {
+    position: relative;
+}
+
+#companyCase {
+    position: absolute;
+    left: 15%;
+    font-family: "Nanum Gothic";
+    font-size: 0.8em;
+    padding: 20px;
+}
+#companyCase .companyInfo {
+    padding: 5px 0;
+}

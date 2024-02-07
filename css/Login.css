@@ -1,0 +1,56 @@
+/* 바디 영역 */
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* 배너 영역 */
+#banner {
+    text-align: center;
+}
+
+#banner img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* 로그인 영역 */
+#memberShip {
+    text-align: center;
+}
+
+#memberShip #user_ID, #memberShip #user_password {
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 18px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#memberShip #user_ID {
+    margin-bottom: 2px;
+}
+
+#memberShip #loginBtn {
+    margin-top: 20px;
+    width: 308px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: #734136;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#memberShip #loginBtn:hover {
+    cursor: pointer;
+    background-color: #96584a;
+}
+
+/* footer 영역 */
+#footer {
+    text-align: center;
+    margin-top: 80px;
+}

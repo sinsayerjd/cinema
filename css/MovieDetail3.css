@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 로고 및 인포, 로그아웃 영역 */
+#head {
+    position: relative;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#head #logoCase {
+    position: absolute;
+    left: 45%;
+}
+
+#head #logoCase #logo {
+    height: 130px;
+}
+
+#head #info {
+    position: absolute;
+    right: 20%;
+}
+
+#info #user_name,
+#info #logout {
+    height: 40px;
+    font-size: 20px;
+}
+
+#info #user_name {
+    margin: 10px;
+}
+
+#info #logout {
+    padding: 10px;
+    background-color: white;
+    border: 0.5px solid #734136;
+    border-radius: 4px;
+    color: #734136;
+    cursor: pointer;
+}
+
+#head #logoCase #logo:hover {
+    cursor: pointer;
+}
+
+/* 내비게이션 영역 */
+#navCase {
+    height: 60px;
+    border-bottom: 3px solid red;
+}
+
+#navCase ul {
+    position: relative;
+}
+
+#navCase ul {
+    position: absolute;
+    left: 15%;
+    list-style: none;
+}
+
+#navCase ul li {
+    float: left;
+    padding: 0 30px;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+}
+
+#navCase ul li:last-child {
+    border-right: none;
+}
+
+#navCase ul li:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* 영화 소개 영역 */
+#movieCase {
+    position: relative;
+    height: 800px;
+    padding-top: 50px;
+    font-family: "Nanum Gothic";
+}
+
+#movieCase #movie {
+    position: absolute;
+    left: 18%;
+    width: 65%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#movieCase #movie #moviePoster {
+    margin-right: 50px;
+    width: 180px;
+    height: 260px;
+    float: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#movieCase #movie #moviePoster #moviePoster {
+    border-radius: 5px;
+}
+
+/* 영화 정보 영역 */
+#movieSimpleInfo {
+    height: 330px;
+}
+
+#movieSimpleInfo .movieInfo {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+
+#movieSimpleInfo .movieInfo .movieTitle {
+    font-size: 35px;
+}
+
+#movieSimpleInfo .movieInfo .movieEngTitle {
+    font-size: 13px;
+}
+
+#movieSimpleInfo .movieInfo .rate {
+    font-size: 15PX;
+}
+
+#movieSimpleInfo .movieInfo * {
+    margin-bottom: 5px;
+}
+
+/* 감독, 배우, 기타 정보 영역 */
+#movieCase #movie #movieSimpleInfo .etcInfo {}
+
+#movieCase #movie #movieSimpleInfo .etcInfo #directorInfo {
+    padding: 10px 0;
+}
+
+#movieCase #movie #movieSimpleInfo .etcInfo #directorInfo .director {
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#movieCase #movie #movieSimpleInfo .etcInfo #actorInfo {
+    padding: 10px 0;
+}
+
+#movieCase #movie #movieSimpleInfo .etcInfo #actorInfo .actor {
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+/* 장르 정보 */
+#movieCase #movie #movieSimpleInfo .genreInfo {
+    padding: 10px 0;
+}
+
+#movieCase #movie #movieSimpleInfo .genreInfo .genre {
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+/* 예매하기 버튼 */
+#movieCase #movie #movieSimpleInfo #bookBtnCase {}
+
+#movieCase #movie #movieSimpleInfo #bookBtnCase .bookBtn {
+    background-color: #ff8084;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#movieCase #movie #movieSimpleInfo #bookBtnCase .bookBtn:hover {
+    cursor: pointer;
+    background-color: #d6676a;
+}
+
+/* 줄거리 영역 */
+#movieCase #movie #synopsisCase {}
+
+#movieCase #movie #synopsisCase .synopsis1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* 감독 및 배우 소개 영역 */
+/* 감독 영역 */
+#directorActorCase {
+    position: relative;
+    height: 1000px;
+    font-family: "Nanum Gothic";
+}
+
+#directorActorCase #directorCase {
+    position: absolute;
+    left: 18%;
+    width: 65%;
+    height: 400px;
+}
+
+#directorActorCase #directorCase #director {
+    padding: 10px 0;
+    padding-left: 10px;
+    border: none;
+    background-color: #ececec;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#directorActorCase #directorCase .directorInfo {
+    overflow: hidden;
+    height: 175px;
+}
+
+#directorActorCase #directorCase .directorInfo .directorImg {
+    float: left;
+    margin-right: 50px;
+    border-radius: 4px;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#directorActorCase #directorCase .directorInfo .directorName {
+    font-size: 20px;
+    color: gray;
+}
+
+/* 배우 영역 */
+#directorActorCase #actorCase {
+    position: absolute;
+    top: 400px;
+    left: 18%;
+    width: 65%;
+    height: 400px;
+}
+
+#directorActorCase #actorCase #actor {
+    padding: 10px 0;
+    padding-left: 10px;
+    border: none;
+    background-color: #ececec;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#directorActorCase #actorCase .actorInfo {
+    width: 350px;
+    height: 175px;
+    margin-bottom: 80px;
+    margin-right: 80px;
+    float: left;
+}
+
+#directorActorCase #actorCase .actorInfo .actorImg {
+    float: left;
+    margin-right: 50px;
+    border-radius: 4px;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#directorActorCase #actorCase .actorInfo .mainActor {
+    margin-bottom: 5px;
+    color: #5743D9;
+    font-weight: bold;
+}
+
+#directorActorCase #actorCase .actorInfo .actorName {
+    font-size: 20px;
+    color: gray;
+}
+
+/* 고객센터 안내 영역 */
+#supportCase {
+    position: relative;
+    height: 200px;
+}
+
+#support {
+    position: absolute;
+    left: 18%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#support #support1 {
+    float: left;
+    height: 70px;
+    margin-right: 15px;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+#support #support2 {
+    display: inline-block;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+
+/* 배너 영역 */
+#bannerCase {
+    height: 250px;
+}
+
+/* footer 영역 */
+footer {
+    position: relative;
+}
+
+#companyCase {
+    position: absolute;
+    left: 15%;
+    font-family: "Nanum Gothic";
+    font-size: 0.8em;
+    padding: 20px;
+}
+
+#companyCase .companyInfo {
+    padding: 5px 0;
+}
